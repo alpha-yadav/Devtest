@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display Image</title>
+    </head>
+    <style>
+        body{
+    background-color: rgb(200,200,200);
+}
+form{
+    border: 3px solid rgba(150,150,150);
+    margin-right: 50em;
+    padding-top: 1em;
+    border-radius: 10px;
+}
+b{
+    border: 3px solid rgba(150,150,150);   
+    border-radius: 10px;
+    background-color: burlywood;
+    color: aqua;
+    padding: 3px 3px 3px 3px;
+}
+    </style>
+<body>
+
+<img height="600" src="{% static name %}">
+<b onclick="window.location='/upload'">New Upload </>
+</body>
+</html>

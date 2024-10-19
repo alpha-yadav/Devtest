@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Devtest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        form{
+            border: 3px solid rgba(150,150,150);
+            margin-right: 50em;
+            padding-top: 1em;
+            border-radius: 10px;
+        }
+        body{
+            background-color: rgb(200,200,200);
+        }
+        p{text-align: center;}
+        #sub{
+            color:bisque;
+            background-color: yellowgreen;
+            border:2px white solid;
+            font-size: 1.6em;
+            border-radius: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload File</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button name="xc" type="submit">Submit</button>
+    </form>
+</body>
+</html>
